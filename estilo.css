@@ -38,3 +38,17 @@ transition: color 0.3s ease;
 background-color: black;
 color: white;
 }
+
+body.main-page {
+  margin: 0;
+  overflow: hidden; /* sin scroll */
+  background: #000; /* color de fondo de las franjas (puedes cambiarlo) */
+}
+
+body.main-page .fondo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; /* asegura que la imagen completa se vea */
+}
+
+
