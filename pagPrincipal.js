@@ -31,10 +31,10 @@ document.getElementById('to-landing4').addEventListener('click', function() {
 
     if (edif1 && edif2 && edif3) {
       // ✅ Todos true → ir a landing6
-      window.location.href = `landing6.html?${params.toString()}`;
+      window.location.href = `Qreal2.html?${params.toString()}`;
     } else {
       // ❌ Alguno false → ir a landing5
-      window.location.href = `landing5.html?${params.toString()}`;
+      window.location.href = `Qreal.html?${params.toString()}`;
     }
   });
 
