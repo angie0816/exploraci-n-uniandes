@@ -60,4 +60,119 @@ body.main-page .fondo {
   object-fit: contain; /* asegura que la imagen completa se vea */
 }
 
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  background-image: url("./a1659e6d-8e78-4e7a-ae41-321779b58896.JPG");
+  background-size: contain;   /* ✅ muestra todo sin cortar */
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.page-container {
+  position: relative;   /* 🔴 referencia para el botón */
+  width: 100%;
+  min-height: 6000px;   /* solo de ejemplo para que la página tenga largo */
+}
+
+.img-btn-ML {
+  width: 420px;   /* tamaño por defecto (PNG) */
+  height: 420px;
+  background-image: url("./Imagenes-mapa/ML_imanen.png"); /* PNG normal */
+  background-size: contain; /* ajusta la imagen */
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;       /* sin borde */
+  cursor: pointer;    /* cursor de manito */
+  background-color: transparent; /* sin fondo */
+  position: absolute; /* así puedes moverlo fácilmente */
+  top: 340px;         /* ajusta posición */
+  left: -20px;        /* ajusta posición */
+  /* transition: all 0.3s ease; /* suaviza cambios */
+}
+
+.img-btn-ML:hover {
+  width: 600px;   /* tamaño al hover (GIF) */
+  height: 500px;
+  background-image: url("./Imagenes-mapa/MLFINALJuandi.gif"); /* GIF al hacer hover */
+  top: 220px; 
+  left: -170px;  
+}
+
+
+.img-btn-C {
+  width: 360px;   /* tamaño por defecto (PNG) */
+  height: 360px;
+  background-image: url("./Imagenes-mapa/C_imagen.png"); /* PNG normal */
+  background-size: contain; /* ajusta la imagen */
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;       /* sin borde */
+  cursor: pointer;    /* cursor de manito */
+  background-color: transparent; /* sin fondo */
+  position: absolute; /* así puedes moverlo fácilmente */
+  top: 100px;         /* ajusta posición */
+  left: 525px;        /* ajusta posición */
+  /* transition: all 0.3s ease; /* suaviza cambios */
+}
+
+.img-btn-C:hover {
+  width: 350px;   /* tamaño al hover (GIF) */
+  height: 350px;
+  background-image: url("./Imagenes-mapa/GifedificioC.gif"); /* GIF al hacer hover */
+  top: 40px; 
+  left: 480px;  
+}
+
+
+.img-btn-B {
+  width: 300px;   /* tamaño por defecto (PNG) */
+  height: 300px;
+  background-image: url("./Imagenes-mapa/B_imagen.png"); /* PNG normal */
+  background-size: contain; /* ajusta la imagen */
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;       /* sin borde */
+  cursor: pointer;    /* cursor de manito */
+  background-color: transparent; /* sin fondo */
+  position: absolute; /* así puedes moverlo fácilmente */
+  top: 275px;         /* ajusta posición */
+  left: 730px;        /* ajusta posición */
+  /* transition: all 0.3s ease; /* suaviza cambios */
+}
+
+.img-btn-B:hover {
+  width: 330px;   /* tamaño al hover (GIF) */
+  height: 330px;
+  background-image: url("./Imagenes-mapa/b_gif_niya_final.gif"); /* GIF al hacer hover */
+  top: 195px; 
+  left: 750px;  
+}
+
+
+.img-btn-Q {
+  width: 360px;   /* tamaño por defecto (PNG) */
+  height: 360px;
+  background-image: url("./Imagenes-mapa/Q_imagen.png"); /* PNG normal */
+  background-size: contain; /* ajusta la imagen */
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;       /* sin borde */
+  cursor: pointer;    /* cursor de manito */
+  background-color: transparent; /* sin fondo */
+  position: absolute; /* así puedes moverlo fácilmente */
+  top: -80px;         /* ajusta posición */
+  left: 850px;        /* ajusta posición */
+  /* transition: all 0.3s ease; /* suaviza cambios */
+}
+
+.img-btn-Q:hover {
+  width: 360px;   /* tamaño al hover (GIF) */
+  height: 360px;
+  background-image: url("./Imagenes-mapa/Q_GIF_FINAL.gif"); /* GIF al hacer hover */
+  top: -30px; 
+  left: 850px;  
+}
