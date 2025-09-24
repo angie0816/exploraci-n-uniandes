@@ -1,3 +1,5 @@
+let quizTerminado = false;
+
 const preguntas = [
     {
         pregunta: "Soy un edificio moderno, de vidrio brillante. En mí hay salones y un auditorio gigante.",
@@ -76,17 +78,35 @@ function mostrarResultado() {
     questionEl.style.display = "none";
     optionsEl.style.display = "none";
     counterEl.style.display = "none";
+
     let mensaje = "";
-    if (puntaje === preguntas.length) {  
+    if (puntaje === preguntas.length) {  
         mensaje = "¡Excelente! lo acertaste todo 👏";
         const angieImg = document.querySelector('.angie'); 
-        angieImg.src = "Imágenes/Angie2.png"; 
+        if (angieImg) angieImg.src = "Imágenes/Angie2.png"; 
     } else if (puntaje > 0) {
         mensaje = "¡Muy bien! pero aún puedes mejorar 😉";
     } else {
         mensaje = "No acertaste, pero inténtalo de nuevo 💪";
     }
+
     resultEl.textContent = `Tu puntaje: ${puntaje}/${preguntas.length}. ${mensaje}`;
+
+    // 🔑 Marcamos que el quiz terminó
+    quizTerminado = true;
 }
 
 mostrarPregunta();
+
+
+document.getElementById('volver-landing1').addEventListener('click', function() {
+    const params = new URLSearchParams(window.location.search);
+
+    // Si el quiz terminó, actualizamos edif2=true
+    if (quizTerminado) {
+      params.set('edif2', 'true');
+    }
+
+    // Volvemos a landing1 con los parámetros actualizados
+    window.location.href = `paginaPrincipal.html?${params.toString()}`;
+  });

@@ -2,6 +2,8 @@ const tablero = document.getElementById("tablero");
 const mensaje = document.getElementById("mensaje");
 const imagenEstado = document.getElementById("imagen-estado");
 
+let rompecabezasResuelto = false;
+
 // Lista de imágenes (una para cada ficha del rompecabezas)
 const logo = [
   "logo/logo1.jpeg", "logo/logo2.jpeg", "logo/logo3.jpeg",
@@ -92,38 +94,54 @@ function snapToGrid(ficha) {
 
 // Verificar si el puzzle está correcto
 function verificarOrden() {
-  const ordenCorrecto = [];
+    const ordenCorrecto = [];
 
-  for (let row = 0; row < 3; row++) {
-    for (let col = 0; col < 3; col++) {
-      const x = col * 104;
-      const y = row * 104;
+    for (let row = 0; row < 3; row++) {
+      for (let col = 0; col < 3; col++) {
+        const x = col * 104;
+        const y = row * 104;
 
-      const ficha = fichas.find(f =>
-        parseInt(f.style.left) === x &&
-        parseInt(f.style.top) === y
-      );
+        const ficha = fichas.find(f =>
+          parseInt(f.style.left) === x &&
+          parseInt(f.style.top) === y
+        );
 
-      if (ficha) {
-        ordenCorrecto.push(parseInt(ficha.dataset.valor));
-      } else {
-        ordenCorrecto.push(null);
+        if (ficha) {
+          ordenCorrecto.push(parseInt(ficha.dataset.valor));
+        } else {
+          ordenCorrecto.push(null);
+        }
       }
+    }
+
+    const esCorrecto = ordenCorrecto.every((val, idx) => val === idx + 1);
+    if (esCorrecto) {
+      mensaje.style.display = "block";
+      document.getElementById("inicio").textContent =
+        "¡Gracias por ayudarme a completar el Rompecabezas!";
+      fichas.forEach(f => f.classList.add("correcto"));
+      mostrarCompleto();
+      // 🔑 Marcamos que se resolvió
+      rompecabezasResuelto = true;
+    } else {
+      mensaje.style.display = "none";
+      fichas.forEach(f => f.classList.remove("correcto"));
+      rompecabezasResuelto = false;
     }
   }
 
-  const esCorrecto = ordenCorrecto.every((val, idx) => val === idx + 1);
-  if (esCorrecto) {
-    mensaje.style.display = "block";
-    document.getElementById("inicio").textContent =
-      "¡Gracias por ayudarme a completar el Rompecabezas!";
-    fichas.forEach(f => f.classList.add("correcto"));
-    mostrarCompleto(); // ✅ detiene el alternar y muestra la final
-  } else {
-    mensaje.style.display = "none";
-    fichas.forEach(f => f.classList.remove("correcto"));
-  }
-}
-
 // Iniciar alternancia de imágenes al cargar la página
 iniciarAlternar();
+
+
+document.getElementById('volver-landing1').addEventListener('click', function() {
+    const params = new URLSearchParams(window.location.search);
+
+    // si se resolvió, actualizamos edif1=true
+    if (rompecabezasResuelto) {
+      params.set('edif1', 'true');
+    }
+
+    // volvemos a landing1 con los parámetros
+    window.location.href = `paginaPrincipal.html?${params.toString()}`;
+  });
