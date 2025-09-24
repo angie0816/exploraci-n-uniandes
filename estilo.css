@@ -67,7 +67,7 @@ body.main-page .fondo {
   width: 100%;
   height: 120vh;
   background-image: url("./a1659e6d-8e78-4e7a-ae41-321779b58896.JPG");
-  background-size: contain;   /* ✅ muestra todo sin cortar */
+  background-size: cover;   /* ✅ muestra todo sin cortar */
   background-repeat: no-repeat;
   background-position: center;
 }
