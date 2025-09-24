@@ -6,7 +6,7 @@ body {
   color: white;
   text-align: center;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body::before {
@@ -116,4 +116,24 @@ header h1 {
 .personaje-grande {
   width: 270px; /* cámbialo al tamaño que quieras */
   top: 5%;
+}
+.btn-volver {
+  position: absolute;
+  top: 90%;      /* separado 20px del borde inferior */
+  right: 20%;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  background-color: #ffef00;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Jersey 10", sans-serif;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-volver:hover {
+  background-color: black;
+  color: white;
 }

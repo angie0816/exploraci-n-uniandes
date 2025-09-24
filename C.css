@@ -113,3 +113,24 @@ button:hover {
     margin-top: 20px; 
     font-weight: bold;
 }
+.btn-volver {
+  position: fixed;   /* siempre visible aunque hagas scroll */
+  top: 50%;      /* separado 20px del borde inferior */
+  right: 30%;       /* separado 20px del borde derecho */
+  width: 105px; /* Ancho deseado */
+  height: 55px;
+  font-size: 1.2em;
+  background-color: #ffef00;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Jersey 10", sans-serif;
+  transition: all 0.3s ease;
+  z-index: 1000;     /* asegura que quede por encima de todo */
+}
+
+.btn-volver:hover {
+  background-color: black;
+  color: white;
+}
