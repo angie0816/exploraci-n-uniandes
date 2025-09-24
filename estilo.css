@@ -79,8 +79,8 @@ body.main-page .fondo {
 }
 
 .img-btn-ML {
-  width: 420px;   /* tamaño por defecto (PNG) */
-  height: 420px;
+  width: 50%;   /* tamaño por defecto (PNG) */
+  height: 50%;
   background-image: url("./Imagenes-mapa/ML_imanen.png"); /* PNG normal */
   background-size: contain; /* ajusta la imagen */
   background-repeat: no-repeat;
@@ -89,23 +89,23 @@ body.main-page .fondo {
   cursor: pointer;    /* cursor de manito */
   background-color: transparent; /* sin fondo */
   position: absolute; /* así puedes moverlo fácilmente */
-  top: 340px;         /* ajusta posición */
-  left: -20px;        /* ajusta posición */
+  top: 51%;         /* ajusta posición */
+  left: -12%;        /* ajusta posición */
   /* transition: all 0.3s ease; /* suaviza cambios */
 }
 
 .img-btn-ML:hover {
-  width: 600px;   /* tamaño al hover (GIF) */
-  height: 500px;
+  width: 70%;   /* tamaño al hover (GIF) */
+  height: 70%;
   background-image: url("./Imagenes-mapa/MLFINALJuandi.gif"); /* GIF al hacer hover */
-  top: 220px; 
-  left: -170px;  
+  top: 30%; 
+  left: -25%;  
 }
 
 
 .img-btn-C {
-  width: 360px;   /* tamaño por defecto (PNG) */
-  height: 360px;
+  width: 35%;   /* tamaño por defecto (PNG) */
+  height: 35%;
   background-image: url("./Imagenes-mapa/C_imagen.png"); /* PNG normal */
   background-size: contain; /* ajusta la imagen */
   background-repeat: no-repeat;
@@ -114,23 +114,23 @@ body.main-page .fondo {
   cursor: pointer;    /* cursor de manito */
   background-color: transparent; /* sin fondo */
   position: absolute; /* así puedes moverlo fácilmente */
-  top: 100px;         /* ajusta posición */
-  left: 525px;        /* ajusta posición */
+  top: 22%;         /* ajusta posición */
+  left: 33%;        /* ajusta posición */
   /* transition: all 0.3s ease; /* suaviza cambios */
 }
 
 .img-btn-C:hover {
-  width: 350px;   /* tamaño al hover (GIF) */
-  height: 350px;
+  width: 45%;   /* tamaño al hover (GIF) */
+  height: 45%;
   background-image: url("./Imagenes-mapa/GifedificioC.gif"); /* GIF al hacer hover */
-  top: 40px; 
-  left: 480px;  
+  top: 8%; 
+  left: 25%;  
 }
 
 
 .img-btn-B {
-  width: 300px;   /* tamaño por defecto (PNG) */
-  height: 300px;
+  width: 30%;   /* tamaño por defecto (PNG) */
+  height: 30%;
   background-image: url("./Imagenes-mapa/B_imagen.png"); /* PNG normal */
   background-size: contain; /* ajusta la imagen */
   background-repeat: no-repeat;
@@ -139,23 +139,23 @@ body.main-page .fondo {
   cursor: pointer;    /* cursor de manito */
   background-color: transparent; /* sin fondo */
   position: absolute; /* así puedes moverlo fácilmente */
-  top: 275px;         /* ajusta posición */
-  left: 730px;        /* ajusta posición */
+  top: 44%;         /* ajusta posición */
+  left: 48%;        /* ajusta posición */
   /* transition: all 0.3s ease; /* suaviza cambios */
 }
 
 .img-btn-B:hover {
-  width: 330px;   /* tamaño al hover (GIF) */
-  height: 330px;
+  width: 42%;   /* tamaño al hover (GIF) */
+  height: 42%;
   background-image: url("./Imagenes-mapa/b_gif_niya_final.gif"); /* GIF al hacer hover */
-  top: 195px; 
-  left: 750px;  
+  top: 30%; 
+  left: 45%;  
 }
 
 
 .img-btn-Q {
-  width: 360px;   /* tamaño por defecto (PNG) */
-  height: 360px;
+  width: 34%;   /* tamaño por defecto (PNG) */
+  height: 34%;
   background-image: url("./Imagenes-mapa/Q_imagen.png"); /* PNG normal */
   background-size: contain; /* ajusta la imagen */
   background-repeat: no-repeat;
@@ -164,18 +164,19 @@ body.main-page .fondo {
   cursor: pointer;    /* cursor de manito */
   background-color: transparent; /* sin fondo */
   position: absolute; /* así puedes moverlo fácilmente */
-  top: -80px;         /* ajusta posición */
-  left: 850px;        /* ajusta posición */
+  top: -3%;         /* ajusta posición */
+  left: 57%;        /* ajusta posición */
   /* transition: all 0.3s ease; /* suaviza cambios */
 }
 
 .img-btn-Q:hover {
-  width: 360px;   /* tamaño al hover (GIF) */
-  height: 360px;
+  width: 40%;   /* tamaño al hover (GIF) */
+  height: 40%;
   background-image: url("./Imagenes-mapa/Q_GIF_FINAL.gif"); /* GIF al hacer hover */
-  top: -30px; 
-  left: 850px;  
+  top: 1%; 
+  left: 54%;  
 }
+
 
 
 

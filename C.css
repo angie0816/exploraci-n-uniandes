@@ -53,6 +53,7 @@ body::before {
     width: 600px;
     height: auto;
     border-radius: 10px;
+    position: absolute;
 }
 
 .container {
