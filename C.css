@@ -115,7 +115,7 @@ button:hover {
 }
 .btn-volver {
   position: fixed;   /* siempre visible aunque hagas scroll */
-  top: 50%;      /* separado 20px del borde inferior */
+  top: 80%;      /* separado 20px del borde inferior */
   right: 30%;       /* separado 20px del borde derecho */
   width: 105px; /* Ancho deseado */
   height: 55px;
