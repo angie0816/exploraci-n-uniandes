@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.Imagenfondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("imagenesQ/bloque-quimica-6e6c8b0c.jpg"); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -2;
+}
+
+.Imagenfondo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #ffe040; 
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.Nosotros {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.Nosotros img {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    animation: baile 2s infinite ease-in-out;
+}
+
+.Nosotros img:nth-child(1) {
+    animation-delay: 0s;
+}
+.Nosotros img:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.Nosotros img:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes baile {
+    0%   { transform: translateY(0) rotate(0deg); }
+    25%  { transform: translateY(-15px) rotate(-3deg); }
+    50%  { transform: translateY(0) rotate(0deg); }
+    75%  { transform: translateY(-15px) rotate(3deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+.btn-volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffe040;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #000;
+    color: white;
+}

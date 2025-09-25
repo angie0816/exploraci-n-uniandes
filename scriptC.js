@@ -83,7 +83,7 @@ function mostrarResultado() {
     if (puntaje === preguntas.length) {  
         mensaje = "¡Excelente! lo acertaste todo 👏";
         const angieImg = document.querySelector('.angie'); 
-        if (angieImg) angieImg.src = "Imágenes/Angie2.png"; 
+        if (angieImg) angieImg.src = "imgNi/Angie2.png"; 
     } else if (puntaje > 0) {
         mensaje = "¡Muy bien! pero aún puedes mejorar 😉";
     } else {

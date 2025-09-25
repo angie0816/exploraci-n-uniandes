@@ -2,6 +2,10 @@ body {
 margin: 0;
 font-family: Arial, Helvetica, sans-serif;
 color: #ffe040;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 text-align: center;
 }
 
@@ -11,32 +15,53 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: url(https://doctorados.uniandes.edu.co/wp-content/uploads/2023/10/programa-doctoral-cienciasquimica-uniandes.jpg);
-background-size: cover;
+background-image: url(imagenesQ/bloque-quimica-6e6c8b0c.jpg);
 background-position: center;
 filter: blur(3px);
 z-index: -1;
 }
 
-.contenedor {
-    text-align: center;
+.Imagenfondo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); 
+    z-index: -1; 
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 4em;
-    color: #333;
-    margin-bottom: 20px;
+font-size: 2.5em;
+color: #ffe040;
+margin-bottom: 30px;
+text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
 .btn-volver {
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: rgb(0, 0, 0);
-    background-color: #ffe040;
+    padding: 12px 25px;
+    font-size: 1.5em;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    background-color: #333;
-    color: white;
+    background-color: #ffe040;
+    color: black;
 }
+
+.btn-volver:hover {
+    background-color: #000;
+    color: white;
+
+}
+
