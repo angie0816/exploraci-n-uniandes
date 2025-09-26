@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   imagenClick.addEventListener("click", () => {
     // 1. Cambiar texto
-    textoBurbuja.textContent = "¡Gracias, ahora sí puedo ir relaja!";
+    textoBurbuja.textContent = "¡Gracias, ahora sí puedo ir a relaja!";
 
     // 2. Cambiar la imagen del personaje
     imagenPersonaje.src = "./imagenes-B/Niya sombrero.png";
