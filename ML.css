@@ -4,13 +4,15 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  background-image: url("./Imagen/fotoml.jpg");
+  width: 100%;
+  height: 100%;
+  background-image: url("./Imagen/fotoml.jpg") ;
   background-size: cover;
-  background-repeat: no-repeat;
   background-color: #000;
   position: relative;
-  overflow: hidden;
+  background-repeat: no-repeat;
 }
+
 h1{
   font-size: 3em;
 }
@@ -29,7 +31,7 @@ h1{
   border: 3px solid #000;
   background-color: #ffe040;
   left: 10%;
-  top: 150px;
+  top: 50px;
 }
 
 #imagenjd {
@@ -38,7 +40,7 @@ h1{
   justify-content: center;
   position: absolute;
   right: 40%;
-  top: 26%;
+  top: 10%;
 }
 
 #imagenjd img {
@@ -98,7 +100,7 @@ h1{
 }
 .btn-volver {
   position: absolute;
-  top: 140%;      /* separado 20px del borde inferior */
+  top: 120%;      /* separado 20px del borde inferior */
   right: 30%;
   padding: 15px 25px;
   font-size: 1.2em;
